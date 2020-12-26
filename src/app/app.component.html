@@ -299,14 +299,8 @@
 </style>
 -->
 <!-- Toolbar -->
-<h1 class="container bg-dark text-white text-center my-4 py-4">nglf show={{show}}</h1>
 <div class="container">
-  <button class="btn-success"(click)="show=!show">Accion</button>
-  <p class="text-info" *ngIf="show; else showTwo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quidem optio est expedita iusto vero quas eos, ipsum repellat esse dolor mollitia aperiam, hic distinctio, numquam harum id vel delectus.</p>
-  <ng-template #showTwo>
-    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa est accusamus, exercitationem vel facere aut ea cupiditate quis dolores quod aperiam ad sed ab quam quas, dolore facilis reprehenderit?</p>
-  </ng-template>
-
+<app-encabezado></app-encabezado>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
 </div>
-<app-cabecera></app-cabecera>
-<app-footer></app-footer> 

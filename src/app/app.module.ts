@@ -20,6 +20,9 @@ const routes: Routes = [
 
 ];
 
+//servicios
+import { EquipoService } from './equipo.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,9 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
 
   ],
-  providers: [],
+  providers: [
+    EquipoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
